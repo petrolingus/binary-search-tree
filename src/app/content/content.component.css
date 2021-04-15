@@ -1,0 +1,150 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #F6F7FC;
+}
+
+.top {
+    width: 100%;
+    height: 20%;
+    background-color: #5F73E4;
+    position: fixed;
+    z-index: 900;
+}
+
+.view-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view {
+    top: 4%;
+    margin: auto;
+    height: 80%;
+    width: 90%;
+    /*background-color: rgb(255, 127, 80);*/
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+canvas {
+    height: 100%;
+    width: 69%;
+    background-color: #182A4E;
+    border-radius: 16px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+
+.nav {
+    margin: 0;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.code-view {
+
+}
+
+.code-view {
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+    margin: 0;
+    padding: 1rem 1rem 1rem 1rem;
+    height: calc(70% - 2rem);
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.code-view::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+    visibility: hidden;
+}
+
+.code-view::-webkit-scrollbar:hover {
+    width: 1rem;
+    height: 1rem;
+    visibility: visible;
+}
+.code-view::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.code-view::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+.tree-nav {
+    padding: 1rem;
+    height: 24%;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+
+.input {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    outline: none;
+    outline-offset: -10px;
+}
+
+.input-wrap {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.buttons {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    width: 33%;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:focus {
+
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 1px solid #5F73E4;
+}
+
+.button1:hover {
+    background-color: #5F73E4;
+    color: white;
+}
+
+.out {
+    font-size: 1.5rem;
+}
+
+
+

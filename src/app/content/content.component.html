@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="top"></div>
+    <div class="view-wrapper">
+        <div class="view">
+            <canvas
+                #canvas
+                (window:resize)="onCanvasResize()"
+                (mousewheel)="onZoom($event)"
+                (mousemove)="onTranslate($event)"
+                (mousedown)="onMouseDown()"
+                (mouseup)="onMouseUp()"
+                (mouseout)="onMouseLeave()"
+            ></canvas>
+            <div class="nav">
+                <div class="code-view">
+                    <pre class="code" [innerHTML]="tree | json"></pre>
+                </div>
+                <div class="tree-nav">
+                    <div class="input-wrap"><input class="input" #input (input)="onInput(input.value)"></div>
+                    <div class="buttons">
+                        <button class="button button1" (click)="addNode($event)">Add</button>
+                        <button class="button button1" (click)="findNode()">Find</button>
+                        <button class="button button1" (click)="removeNode()">Remove</button>
+                    </div>
+                    <pre class="out">Result: {{result}}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
